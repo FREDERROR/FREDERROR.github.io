@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="有点意思">
 <meta property="og:description" content="指令标识概述 指令标识是被服务器解释并且执行的。通过指令标识可以使服务器按照指令的设置来执行动作和设置在整个JSP页面范围内有效的属性。指令通常以&amp;lt;%@开始，以%&amp;gt;结束 在JSP中主要包含3种指令，分别是： page include taglib这三种指令的通常格式为：&amp;lt;%@ 指令名称 属性1=&amp;quot;属性值&amp;quot; 属性2=&amp;quot;属性值&amp;quot; ...%&amp;gt">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-20T11:25:33.516Z">
+<meta property="og:updated_time" content="2018-07-20T11:31:15.626Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JSP语法-JSP中的指令标识">
 <meta name="twitter:description" content="指令标识概述 指令标识是被服务器解释并且执行的。通过指令标识可以使服务器按照指令的设置来执行动作和设置在整个JSP页面范围内有效的属性。指令通常以&amp;lt;%@开始，以%&amp;gt;结束 在JSP中主要包含3种指令，分别是： page include taglib这三种指令的通常格式为：&amp;lt;%@ 指令名称 属性1=&amp;quot;属性值&amp;quot; 属性2=&amp;quot;属性值&amp;quot; ...%&amp;gt">
@@ -85,7 +85,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -104,10 +104,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
+            POSTS: 'Entradas',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
+            CATEGORIES: 'Categorias',
+            TAGS: 'Etiquetas',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -138,7 +138,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
     </div>
 
                 </td>
@@ -158,16 +158,16 @@
             <h2 id="name">Fred</h2>
             <h3 id="title">青春须早为，岂能长少年</h3>
             <span id="location"><i class="fas fa-map-marker-alt" style="padding-right: 5px"></i>Chengdu, China</span>
-            <a id="follow" target="_blank" href="">FOLLOW</a>
+            <a id="follow" target="_blank" href="">SEGUIR</a>
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                3
-                <span>posts</span>
+                2
+                <span>Entradas</span>
             </div>
             <div class="article-info-block">
                 0
-                <span>tag</span>
+                <span>Etiqueta</span>
             </div>
         </div>
         
@@ -257,12 +257,10 @@
 </li>
 <li>page指令就是页面指令，可以定义在整个JSP页面范围内有效的属性，其格式如下：<br><br><code>&lt;%@ page attribute1=&quot;value1&quot; attribute2=&quot;value2&quot; ...%&gt;</code></li>
 </ul>
-<p>##include指令</p>
-<ul>
+<h2 id="include指令"><a href="#include指令" class="headerlink" title="include指令"></a>include指令</h2><ul>
 <li>用于在当前JSP页面中，在当前使用该指令的位置嵌入其他文件，指令格式如下：<br><br><code>&lt;%@ include file=&quot;文件的绝对路径或相对路径&quot; %&gt;</code></li>
 </ul>
-<p>##taglib指令</p>
-<ul>
+<h2 id="taglib指令"><a href="#taglib指令" class="headerlink" title="taglib指令"></a>taglib指令</h2><ul>
 <li>在JSP页面中，可以直接使用JSP提供的一些动作元素标识来完成特定的功能，如使用<a href="jsp:include" target="_blank" rel="noopener">jsp:include</a>包含一个文件。通过使用taglib指令，就可以在页面中使用这些基本标识或自定义的标识来完成特殊的功能，其指令格式如下：<br><br><code>&lt;%@ taglib uri=&quot;tagURI&quot; prefix=&quot;tagPrefix&quot; %&gt;</code></li>
 </ul>
 
@@ -275,7 +273,7 @@
 
 </div>
 
-    <a data-url="http://yoursite.com/2018/07/20/JSP语法-JSP中的指令标识/" data-id="cjjtwk41y0000e0sswntrmg53" class="article-share-link"><i class="fas fa-share"></i>Share</a>
+    <a data-url="http://yoursite.com/2018/07/20/JSP语法-JSP中的指令标识/" data-id="cjjtwmk6f0000lsssaz8qbdcc" class="article-share-link"><i class="fas fa-share"></i>Compartir</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -352,7 +350,7 @@
     
     
         <a href="/2018/07/09/绝对路径和相对路径/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Older</strong>
+            <strong class="article-nav-caption">Más viejo</strong>
             <div class="article-nav-title">绝对路径和相对路径</div>
         </a>
     
@@ -373,7 +371,7 @@
    
         
     <div class="widget-wrap">
-        <h3 class="widget-title">recent</h3>
+        <h3 class="widget-title">Recientes</h3>
         <div class="widget">
             <ul id="recent-post" class="">
                 
@@ -415,25 +413,6 @@
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/07/07/hello-world/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/07/07/hello-world/" class="title">Hello World</a></p>
-                            <p class="item-date"><time datetime="2018-07-07T04:38:24.031Z" itemprop="datePublished">2018-07-07</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -443,9 +422,9 @@
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">archives</h3>
+        <h3 class="widget-title">Archivos</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">3</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">2</span></li></ul>
         </div>
     </div>
 
@@ -456,7 +435,7 @@
     
         
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">links</h3>
+        <h3 class="widget-title">Links</h3>
         <div class="widget">
             <ul>
                 
