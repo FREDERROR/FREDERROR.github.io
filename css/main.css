@@ -1930,7 +1930,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff6524;
+  background: #e07fc2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3182,7 +3182,7 @@ ul.breadcrumb li+li:last-child {
   }
 }
 body {
-  background: url("https://source.unsplash.com/random/1600x900");
+  background: url("https://upload-images.jianshu.io/upload_images/7919255-94fc04897af5658b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
