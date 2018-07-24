@@ -3,15 +3,21 @@
 <head>
     <meta charset="utf-8">
     
-    <title>有点意思</title>
+    <title>Java的四种访问权限 | 有点意思</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="有点意思">
-<meta property="og:url" content="http://yoursite.com/index.html">
+    <meta name="description" content="权限 类内 同包 不同包子类 不同包非子类     private √ × × ×   default √ √ × ×   protected √ √ √ ×   public √ √ √ √    private：私有的，Java语言中权限最窄修饰符，被修饰的属性和方法只能被该类的对象访问defalut：友好的，被修饰的属性和方法只能在同一个包中访问。protected：受保护的，介于pr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java的四种访问权限">
+<meta property="og:url" content="http://yoursite.com/2018/07/24/Java的四种访问权限/index.html">
 <meta property="og:site_name" content="有点意思">
+<meta property="og:description" content="权限 类内 同包 不同包子类 不同包非子类     private √ × × ×   default √ √ × ×   protected √ √ √ ×   public √ √ √ √    private：私有的，Java语言中权限最窄修饰符，被修饰的属性和方法只能被该类的对象访问defalut：友好的，被修饰的属性和方法只能在同一个包中访问。protected：受保护的，介于pr">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2018/07/24/Java的四种访问权限/images/TIM截图20180724124910_1.png">
+<meta property="og:updated_time" content="2018-07-24T04:50:23.860Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="有点意思">
+<meta name="twitter:title" content="Java的四种访问权限">
+<meta name="twitter:description" content="权限 类内 同包 不同包子类 不同包非子类     private √ × × ×   default √ √ × ×   protected √ √ √ ×   public √ √ √ √    private：私有的，Java语言中权限最窄修饰符，被修饰的属性和方法只能被该类的对象访问defalut：友好的，被修饰的属性和方法只能在同一个包中访问。protected：受保护的，介于pr">
+<meta name="twitter:image" content="http://yoursite.com/2018/07/24/Java的四种访问权限/images/TIM截图20180724124910_1.png">
     
 
     
@@ -210,16 +216,15 @@
 </aside>
 
             
-            <section id="main">
-    <article id="post-Java的四种访问权限" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-Java的四种访问权限" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
             <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/07/24/Java的四种访问权限/">Java的四种访问权限</a>
+        <h1 class="article-title" itemprop="name">
+            Java的四种访问权限
         </h1>
     
 
@@ -367,268 +372,24 @@
         </footer>
     </div>
     
-</article>
-
-
-
-    <article id="post-JSP语法-JSP中的指令标识" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
         
-        
-            <header class="article-header">
-                
+<nav id="article-nav">
     
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/07/20/JSP语法-JSP中的指令标识/">JSP语法-JSP中的指令标识</a>
-        </h1>
     
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fas fa-calendar-alt"></i>
-        <a href="/2018/07/20/JSP语法-JSP中的指令标识/">
-            <time datetime="2018-07-20T10:41:32.000Z" itemprop="datePublished">2018-07-20</time>
+        <a href="/2018/07/20/JSP语法-JSP中的指令标识/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">JSP语法-JSP中的指令标识</div>
         </a>
-    </div>
-
-
-                        
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <h1 id="指令标识概述"><a href="#指令标识概述" class="headerlink" title="指令标识概述"></a>指令标识概述</h1><ul>
-<li>指令标识是被服务器解释并且执行的。通过指令标识可以使服务器按照指令的设置来执行动作和设置在整个JSP页面范围内有效的属性。<br>指令通常以<code>&lt;%@</code>开始，以<code>%&gt;</code>结束</li>
-<li>在JSP中主要包含3种指令，分别是：<ol>
-<li>page</li>
-<li>include</li>
-<li>taglib<br><br>这三种指令的通常格式为：<br><br><code>&lt;%@ 指令名称 属性1=&quot;属性值&quot; 属性2=&quot;属性值&quot; ...%&gt;</code><h2 id="page指令"><a href="#page指令" class="headerlink" title="page指令"></a>page指令</h2></li>
-</ol>
-</li>
-<li>page指令就是页面指令，可以定义在整个JSP页面范围内有效的属性，其格式如下：<br><br><code>&lt;%@ page attribute1=&quot;value1&quot; attribute2=&quot;value2&quot; ...%&gt;</code></li>
-</ul>
-<h2 id="include指令"><a href="#include指令" class="headerlink" title="include指令"></a>include指令</h2><ul>
-<li>用于在当前JSP页面中，在当前使用该指令的位置嵌入其他文件，指令格式如下：<br><br><code>&lt;%@ include file=&quot;文件的绝对路径或相对路径&quot; %&gt;</code></li>
-</ul>
-<h2 id="taglib指令"><a href="#taglib指令" class="headerlink" title="taglib指令"></a>taglib指令</h2><ul>
-<li>在JSP页面中，可以直接使用JSP提供的一些动作元素标识来完成特定的功能，如使用<a href="jsp:include" target="_blank" rel="noopener">jsp:include</a>包含一个文件。通过使用taglib指令，就可以在页面中使用这些基本标识或自定义的标识来完成特殊的功能，其指令格式如下：<br><br><code>&lt;%@ taglib uri=&quot;tagURI&quot; prefix=&quot;tagPrefix&quot; %&gt;</code></li>
-</ul>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://yoursite.com/2018/07/20/JSP语法-JSP中的指令标识/" data-id="cjjz83ra70001hkss3pgmhsub" class="article-share-link"><i class="fas fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fab fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fab fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fab fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fab fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
     
+</nav>
 
-        </footer>
-    </div>
+
     
 </article>
 
 
-
-    <article id="post-绝对路径和相对路径" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
     
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/07/09/绝对路径和相对路径/">绝对路径和相对路径</a>
-        </h1>
     
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fas fa-calendar-alt"></i>
-        <a href="/2018/07/09/绝对路径和相对路径/">
-            <time datetime="2018-07-09T15:37:58.956Z" itemprop="datePublished">2018-07-09</time>
-        </a>
-    </div>
-
-
-                        
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <h1 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h1><ul>
-<li>绝对路径是指目录下的绝对位置，直接到达目标位置，通常是从盘符开始的，<strong>完整的描述文件位置的路径就是绝对路径</strong>。<br>  例如：这个路径：D/wamp/www/img/icon.jpg告诉我们icon.jpg这个文件是在D盘的wamp目录下的img子目录中。我们不需要知道其他信息就可以根据绝对路径判断出文件的位置</li>
-</ul>
-<h1 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h1><ul>
-<li>相对路径，顾名思义就是自己相对于目标的位置<img src="https://i.imgur.com/jo58ZVj.png" alt=""><br>  <code>./</code>代表当前目录<br>  <code>../</code>代表父级目录<br>  <code>/</code>代表根目录</li>
-</ul>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://yoursite.com/2018/07/09/绝对路径和相对路径/" data-id="cjjz83rac0002hkssyaqtgksa" class="article-share-link"><i class="fas fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fab fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fab fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fab fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fab fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-
-        </footer>
-    </div>
-    
-</article>
-
 
 </section>
             
